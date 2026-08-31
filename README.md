@@ -1,4 +1,4 @@
-# Git Activity Maker
+# heatmap-forge
 
 Generates a full GitHub activity heatmap on an existing remote repository by creating
 backdated commits that quietly toggle the `README.md` content. The README always ends up
@@ -19,7 +19,7 @@ back to normal, so nothing stays corrupted.
 ## Project structure
 
 ```
-git-activity-maker/
+heatmap-forge/
 ├── index.js           # entry point / orchestrator
 ├── .env               # your config (git-ignored, stays local)
 ├── .env.example       # documented template for .env

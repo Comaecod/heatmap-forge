@@ -18,10 +18,10 @@ class GitHubClient {
         method,
         headers: {
           Authorization: `token ${this.token}`,
-          "User-Agent": "git-activity-maker",
-          Accept: "application/vnd.github+json",
-          "Content-Type": "application/json",
-          "Content-Length": payload ? Buffer.byteLength(payload) : 0,
+          'User-Agent': 'heatmap-forge',
+          Accept: 'application/vnd.github+json',
+          'Content-Type': 'application/json',
+          'Content-Length': payload ? Buffer.byteLength(payload) : 0,
         },
       };
       const req = https.request(options, (res) => {
