@@ -1,18 +1,53 @@
 {
   "name": "heatmap-forge",
   "version": "1.0.0",
-  "description": "Generate fake git activity heatmap by backdating commits",
+  "description": "Fake a full GitHub activity heatmap by creating backdated commits that quietly toggle the README.md content on any repo you control.",
   "main": "index.js",
+  "type": "commonjs",
   "bin": {
-    "git-activity": "./index.js"
+    "heatmap-forge": "./index.js"
   },
+  "files": [
+    "index.js",
+    "src/",
+    ".env.example"
+  ],
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "prepack": "node scripts/check-env.js",
+    "prepublishOnly": "npm run prepack"
   },
   "keywords": [
     "git",
+    "github",
     "heatmap",
-    "activity"
+    "contributions",
+    "activity",
+    "backdate",
+    "commit",
+    "graph",
+    "green",
+    "automation"
   ],
-  "license": "MIT"
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Comaecod",
+    "email": "vishnuthecoder@gmail.com",
+    "url": "https://github.com/Comaecod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Comaecod/heatmap-forge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Comaecod/heatmap-forge/issues"
+  },
+  "homepage": "https://github.com/Comaecod/heatmap-forge#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "preferGlobal": true
 }

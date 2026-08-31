@@ -1,0 +1,10 @@
+.env
+.env.*
+!*.example
+node_modules/
+.npmignore
+.git/
+.gitignore
+scripts/
+*.md
+!README.md
