@@ -1,0 +1,9 @@
+# Force LF line endings for the executable so the shebang stays valid and npm doesn't
+# reject the bin entry.
+*.js text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.example text eol=lf
+
+# Keep the shebang line ending CRLF-free
+index.js text eol=lf
